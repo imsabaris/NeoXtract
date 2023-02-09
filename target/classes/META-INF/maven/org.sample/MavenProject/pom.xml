@@ -23,7 +23,6 @@
 			<version>7.11.1</version>
 			<scope>test</scope>
 		</dependency>
-		
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -54,7 +53,6 @@
 			<version>1.1.14</version>
 			<scope>test</scope>
 		</dependency>
-		
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -62,14 +60,12 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-		
 		<!-- https://mvnrepository.com/artifact/com.beust/jcommander -->
-<dependency>
-    <groupId>com.beust</groupId>
-    <artifactId>jcommander</artifactId>
-    <version>1.82</version>
-</dependency>
-
+		<dependency>
+			<groupId>com.beust</groupId>
+			<artifactId>jcommander</artifactId>
+			<version>1.82</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all -->
 		<dependency>
 			<groupId>org.hamcrest</groupId>
@@ -103,21 +99,22 @@ https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber6-adap
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
 				<configuration>
 					<source>7</source>
 					<target>7</target>
 				</configuration>
 			</plugin>
 			<plugin>
-               <groupId>org.apache.maven.plugins</groupId>
-               <artifactId>maven-surefire-plugin</artifactId>
-               <version>3.0.0-M5</version>
-               <configuration>
-                   <suiteXmlFiles>
-                       <suiteXmlFile>testng.xml</suiteXmlFile>
-                   </suiteXmlFiles>
-                   </configuration>
-                   </plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M5</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>
